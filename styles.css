@@ -1,0 +1,391 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9; /* Light gray background for elegance */
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50; /* Dark Blue for sophistication */
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  font-style: italic;
+  opacity: 0.8;
+}
+/* Welcome Image Style */
+.welcome-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 30px 0;
+  display: block;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+
+/* Navigation Button */
+a.menu-btn, a.back-btn {
+  display: inline-block;
+  background-color: #f39c12; /* Gold accent color for buttons */
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 30px;
+}
+
+a.menu-btn:hover, a.back-btn:hover {
+  background-color: #e67e22; /* Darker shade on hover */
+  transform: scale(1.05);
+}
+
+/* Main Content */
+main {
+  margin: 20px 0;
+}
+
+/* Menu Section */
+#menu {
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+#menu h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
+
+/* Menu Section Titles */
+.menu-section {
+  margin-bottom: 50px;
+}
+
+.menu-section h3 {
+  font-size: 2em;
+  color: #34495e;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Menu Items */
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.menu-item-img {
+  max-width: 200px; /* Set image size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+  flex: 0 0 35%;
+}
+
+.menu-item-info {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.menu-item-info h4 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.menu-item-info p {
+  font-size: 1.1em;
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.menu-item-info span {
+  color: #f39c12;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+/* Hover effect for images */
+.menu-item-img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  font-size: 1.3em;
+  line-height: 1.8;
+  color: #7f8c8d;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50; /* Dark Blue */
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+/* Game Styles (Integrated with the Premium Theme) */
+.game-container {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.game-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.game-cell {
+  width: 80px;
+  height: 80px;
+  background-color: #ecf0f1;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 10px;
+}
+
+.game-cell:hover {
+  background-color: #f39c12;
+  transform: scale(1.05);
+}
+
+.game-cell.x {
+  color: #e74c3c; /* Red for X */
+}
+
+.game-cell.o {
+  color: #3498db; /* Blue for O */
+}
+
+.game-message {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #34495e;
+  margin-top: 20px;
+}
+/* General Styles (already existing above) */
+
+#game {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 400px; /* Limit the max width of the game board */
+}
+
+#tic-tac-toe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Use fractions for responsive layout */
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.cell {
+  width: 100%; /* Make the cell width 100% of its container */
+  height: 100px; /* Fixed height for consistency */
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem; /* Increased font size for better visibility */
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.cell.x::before {
+  content: 'X';
+  color: #ff6b6b;
+}
+
+.cell.o::before {
+  content: 'O';
+  color: #4CAF50;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+.restart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.restart-btn:hover {
+  background-color: #ff4b4b;
+}
+
+#winning-message-text {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item-img {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+
+  .menu-item-info {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  #menu h2 {
+    font-size: 2.2em;
+  }
+
+  .menu-section h3 {
+    font-size: 1.7em;
+  }
+
+  .game-board {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .game-cell {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  .menu-item h4 {
+    font-size: 1.4em;
+  }
+
+  .menu-item p {
+    font-size: 1em;
+  }
+
+  .menu-item span {
+    font-size: 1.2em;
+  }
+
+  .game-cell {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2em;
+  }
+
+  .game-title {
+    font-size: 2em;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
